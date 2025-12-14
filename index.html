@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemeriksaan IMT Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 Kalkulator Indeks Massa Tubuh (IMT)</h1>
+        <p>Hitung IMT Anda untuk mengetahui kategori berat badan Anda.</p>
+
+        <form id="bmi-form">
+            <div class="input-group">
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="number" id="weight" step="0.1" required>
+            </div>
+
+            <div class="input-group">
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="number" id="height" step="1" required>
+            </div>
+
+            <button type="submit">Hitung IMT</button>
+        </form>
+
+        <div id="result" class="result-box">
+            </div>
+
+        <div class="info-box">
+            <h3>Kategori IMT</h3>
+            <p>
+                IMT adalah rasio berat dan tinggi badan yang umum digunakan.
+            </p>
+            <ul>
+                <li>Dibawah 18.5: Kurang Berat Badan</li>
+                <li>18.5 - 24.9: Berat Badan Normal</li>
+                <li>25.0 - 29.9: Kelebihan Berat Badan</li>
+                <li>30.0 ke atas: Obesitas</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
